@@ -1,0 +1,4 @@
+FROM resin/armhf-alpine:edge
+RUN [ "cross-build-start" ]
+RUN apk --update add nodejs
+RUN [ "cross-build-end" ]

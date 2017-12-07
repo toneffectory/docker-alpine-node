@@ -1,4 +1,4 @@
 FROM resin/armhf-alpine:edge
 RUN [ "cross-build-start" ]
-RUN apk --update add nodejs
+RUN apk --update add nodejs openssl
 RUN [ "cross-build-end" ]
